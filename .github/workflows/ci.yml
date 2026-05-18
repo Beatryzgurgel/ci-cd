@@ -11,8 +11,8 @@ on: #triggers
       -'package-lock.json'
       -'tsconfig.json'
 
-    #paths-ignore: #não participam do test no Action
-    #  -'README.md'
+    paths-ignore: #não participam do test no Action
+     -'README.md'
 
 env:
   PORT: ${{ vars.PORT }}
